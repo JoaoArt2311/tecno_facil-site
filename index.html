@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecnoFacil</title>
+    <meta name="description"
+        content="Soluções digitais, automação, manutenção e desenvolvimento web para facilitar o seu mundo digital." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="#inicio" class="logo" aria-label="TecnoFacil início">
+                <img src="assets/logo.png" alt="Logo TecnoFacil">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-slider" id="heroSlider">
+                <button class="slider-arrow slider-arrow-left" id="prevSlide" aria-label="Slide anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="slides">
+                    <article class="hero-slide active">
+                        <div class="hero-bg" style="background-image: url('assets/hero-1.jpg');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="container hero-content">
+                            <div class="hero-text">
+                                <h1>TECNO FACILITANDO<br>SEU MUNDO DIGITAL</h1>
+                                <p>
+                                    Somos especialistas em desenvolvimento, automação e soluções tecnológicas
+                                    que facilitam sua vida digital.
+                                </p>
+                                <a href="#contato" class="btn btn-green">Entre em Contato</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hero-slide">
+                        <div class="hero-bg" style="background-image: url('assets/hero-2.jpg');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="container hero-content">
+                            <div class="hero-text">
+                                <h2 class="hero-title-alt">AUTOMAÇÃO, PERFORMANCE<br>E RESULTADOS</h2>
+                                <p>
+                                    Criamos soluções sob medida para empresas que querem mais agilidade,
+                                    produtividade e presença digital profissional.
+                                </p>
+                                <a href="#servicos" class="btn btn-green">Ver Serviços</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hero-slide">
+                        <div class="hero-bg" style="background-image: url('assets/hero-3.jpg');"></div>
+                        <div class="hero-overlay"></div>
+                        <div class="container hero-content">
+                            <div class="hero-text">
+                                <h2 class="hero-title-alt">TECNOLOGIA COM VISUAL<br>MODERNO E ESTRATÉGICO</h2>
+                                <p>
+                                    Websites, manutenção, automações e soluções de TI com foco em estética,
+                                    funcionalidade e crescimento.
+                                </p>
+                                <a href="#portfolio" class="btn btn-green">Conheça os Projetos</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="slider-arrow slider-arrow-right" id="nextSlide" aria-label="Próximo slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="slider-dots" id="sliderDots">
+                    <button class="dot active" aria-label="Ir para slide 1"></button>
+                    <button class="dot" aria-label="Ir para slide 2"></button>
+                    <button class="dot" aria-label="Ir para slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services" id="servicos">
+            <div class="container">
+                <h2 class="section-title">O QUE FAZEMOS</h2>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Desenvolvimento de Website</h3>
+                            <p>
+                                Sites responsivos, modernos e estratégicos para destacar sua marca e converter mais.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Automação e Scripts</h3>
+                            <p>
+                                Automatização de processos para economizar tempo, reduzir erros e melhorar sua rotina.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Manutenção de Computadores</h3>
+                            <p>
+                                Suporte, otimização e manutenção para manter seus equipamentos rápidos e confiáveis.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Soluções de TI Personalizadas</h3>
+                            <p>
+                                Projetos personalizados para atender empresas e clientes que precisam de tecnologia sob
+                                medida.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h2>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-top">
+                            <img src="assets/avatar-1.jpg" alt="Lucas Fernandes">
+                            <div>
+                                <h3>Lucas Fernandes</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>
+                            Atendimento excelente, comunicação clara e resultado final acima do esperado.
+                            O projeto ficou muito profissional.
+                        </p>
+                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-top">
+                            <img src="assets/avatar-2.jpg" alt="Ana Silva">
+                            <div>
+                                <h3>Ana Silva</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>
+                            Serviço muito bem feito, suporte rápido e ótima experiência. A TecnoFacil conseguiu
+                            organizar tudo com muita qualidade.
+                        </p>
+                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-top">
+                            <img src="assets/avatar-3.jpg" alt="Carlos Oliveira">
+                            <div>
+                                <h3>Carlos Oliveira</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>
+                            Profissionalismo, bom gosto e execução técnica. Ficou nítido o cuidado com os detalhes
+                            e com a apresentação final.
+                        </p>
+                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">CONHEÇA NOSSOS PROJETOS</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-1.jpg" alt="Projeto GreenFin">
+                        </div>
+                        <div class="project-content">
+                            <h3>GreenFin</h3>
+                            <p>
+                                Plataforma com visual moderno, estrutura objetiva e foco em credibilidade digital.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-2.jpg" alt="Projeto E-Shop Plus">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Shop Plus</h3>
+                            <p>
+                                Projeto voltado para presença digital forte, navegação clara e melhor vitrine de
+                                produtos.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-3.jpg" alt="Projeto TechBlog">
+                        </div>
+                        <div class="project-content">
+                            <h3>TechBlog</h3>
+                            <p>
+                                Estrutura de conteúdo com estética tecnológica, leitura agradável e visual profissional.
+                            </p>
+                            <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre">
+            <div class="about-bg-map"></div>
+            <div class="about-overlay-shape"></div>
+
+            <div class="container about-grid">
+                <div class="about-content">
+                    <h2>SOBRE A TECNOFACIL</h2>
+                    <p>
+                        A TecnoFacil trabalha com soluções digitais para empresas e clientes que precisam de mais
+                        praticidade, desempenho e organização tecnológica.
+                    </p>
+                    <p>
+                        Atuamos com desenvolvimento de sites, manutenção, automações e soluções personalizadas,
+                        sempre com foco em visual profissional, eficiência e resultado.
+                    </p>
+                </div>
+
+                <div class="location-card" id="contato">
+                    <h3><i class="fa-solid fa-location-dot"></i> Nosa Localização</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-square-envelope"></i> contato@tecnofacil.com</li>
+                        <li><i class="fa-solid fa-phone"></i> (00) 1034-5670</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Rua Exemplo, 123, Centro, Cidade, Estado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Logo TecnoFacil">
+            </div>
+
+            <a href="mailto:contato@tecnofacil.com" class="footer-item">
+                <i class="fa-solid fa-square-envelope"></i>
+                contato@tecnofacil.com
+            </a>
+
+            <a href="tel:+550010345679" class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                (00) 1034-5679
+            </a>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                Rua Exemplo, 123, Centro, Cidade, Estado
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
