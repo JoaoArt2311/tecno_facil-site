@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Formatação</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formatação - TecnoFacil</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" aria-label="TecnoFacil início">
+                <img src="img/LOGO-cerebro-roxo.png" alt="Logo TecnoFacil">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
 </body>
+<script src="script.js"></script>
 </html>
