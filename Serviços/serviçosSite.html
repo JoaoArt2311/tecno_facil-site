@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-site/styleServiçoSite.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Clientes Sites - TecnoFacil</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="../index.html" class="logo" aria-label="TecnoFacil início">
+                <img src="../img/LOGO-cerebro-roxo.png" alt="Logo TecnoFacil">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#clientes" class="nav-link">Clientes</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="site-page-hero" id="inicio">
+            <div class="container site-page-hero-content">
+                <span class="site-page-eyebrow">Portfólio de Sites</span>
+                <h1>Alguns sites desenvolvidos pela TecnoFacil</h1>
+                <p>
+                    Na TecnoFacil
+                    , a criação de sites vai muito além de apenas montar páginas bonitas. Nós desenvolvemos sites
+                    estratégicos, modernos e responsivos, pensados para fortalecer a presença digital da sua empresa e
+                    transformar visitantes em clientes.
+                </p>
+                <a href="#clientes" class="btn btn-green">Ver seção</a>
+            </div>
+        </section>
+
+        <section class="section site-links-section" id="clientes">
+            <div class="container">
+                <div class="site-section-heading">
+                    <span class="site-page-eyebrow site-page-eyebrow-light">Cards clicáveis</span>
+                    <h2 class="site-section-title">Projetos Web desenvolvidos</h2>
+                    <!-- <p>
+                        Aqui você consegue destacar um site desenvolvido, um projeto específico ou um modelo de página.
+                        Ao clicar, a pessoa vai direto para o link configurado por você.
+                    </p> -->
+                </div>
+
+                <div class="site-links-grid">
+                    <a class="site-link-card" href="https://use-luume.netlify.app/" target="_blank">
+                        <div class="site-link-image">
+                            <img src="../img-service/foto-use-luume.png" alt="Projeto de desenvolvimento de site">
+                        </div>
+                        <div class="site-link-body">
+                            <span class="site-link-tag">Catálogo Online</span>
+                            <h3>Site - Use Luume</h3>
+                            <p>
+                                A TecnoFacil
+                                desenvolveu o site da Use Luume com o objetivo de fortalecer a presença digital da marca
+                                e transmitir toda a elegância e sofisticação das suas peças.
+                            </p>
+                            <span class="site-link-cta">Abrir projeto</span>
+                        </div>
+                    </a>
+
+                    <a class="site-link-card" href="https://jornada-viagens-joao-arthur.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="site-link-image">
+                            <img src="../img-service/site-jornada.png" alt="Landing page para captação de clientes">
+                        </div>
+                        <div class="site-link-body">
+                            <span class="site-link-tag">Demonstração</span>
+                            <h3>Site - Jornada</h3>
+                            <p>
+                                Esse site foi desenvolvido com a proposta inicial, para demosntração de teste, sem nem um vinculo comercial.
+                            </p>
+                            <span class="site-link-cta">Ver mais</span>
+                        </div>
+                    </a>
+
+                    <!-- <a class="site-link-card" href="../index.html#portfolio">
+                        <div class="site-link-image">
+                            <img src="../img/imagem3.png" alt="Portfólio de projetos digitais">
+                        </div>
+                        <div class="site-link-body">
+                            <span class="site-link-tag">Portfólio</span>
+                            <h3>Cases e resultados</h3>
+                            <p>
+                                Também funciona muito bem para reunir vários trabalhos em uma página principal de
+                                portfólio ou uma área com mais detalhes.
+                            </p>
+                            <span class="site-link-cta">Conhecer projeto</span>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section site-cta-section" id="contato">
+            <div class="container">
+                <div class="site-cta-shell">
+                    <div>
+                        <span class="site-page-eyebrow">Contato</span>
+                        <h2>Se esse visual te agradar, eu adapto os cards com seus sites e links reais.</h2>
+                    </div>
+                    <a href="https://wa.me/5562982403261" class="btn btn-green">Chamar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js" defer></script>
 </body>
+
 </html>

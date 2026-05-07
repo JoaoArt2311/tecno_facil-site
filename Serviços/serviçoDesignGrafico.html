@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes Design Grafico - TecnoFacil</title>
+    <link rel="stylesheet" href="css-design/styleServiçoDesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Clientes Design Gráfico - TecnoFacil</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="../index.html" class="logo" aria-label="TecnoFacil início">
+                <img src="../img/LOGO-cerebro-roxo.png" alt="Logo TecnoFacil">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#clientes" class="nav-link">Clientes</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="design-page-hero" id="inicio">
+            <div class="container design-page-hero-content">
+                <span class="design-page-eyebrow">Portfólio de Design</span>
+                <h1>Alguns materiais de design gráfico desenvolvidos pela TecnoFacil</h1>
+                <p>
+                    Criamos peças visuais com foco em posicionamento, clareza da mensagem e uma identidade que valoriza
+                    a marca. Aqui você encontra alguns formatos que podem ser adaptados para cada cliente.
+                </p>
+                <a href="#clientes" class="btn btn-green">Ver seção</a>
+            </div>
+        </section>
+
+        <section class="section design-links-section" id="clientes">
+            <div class="container">
+                <div class="design-section-heading">
+                    <span class="design-page-eyebrow design-page-eyebrow-light">Materiais criativos</span>
+                    <h2 class="design-section-title">Projetos e formatos visuais</h2>
+                </div>
+
+                <div class="design-links-grid">
+                    <article class="design-link-card">
+                        <div class="design-link-image">
+                            <img src="../img/Design-Grafico.png" alt="Artes para redes sociais">
+                        </div>
+                        <div class="design-link-body">
+                            <span class="design-link-tag">Social Media</span>
+                            <h3>Posts para redes sociais</h3>
+                            <p>
+                                Artes pensadas para gerar atenção rápida no feed, reforçar a identidade visual e
+                                destacar promoções, conteúdos e campanhas da marca.
+                            </p>
+                            <span class="design-link-cta">Formato adaptável</span>
+                        </div>
+                    </article>
+
+                    <article class="design-link-card">
+                        <div class="design-link-image">
+                            <img src="../img/Design-Grafico.png" alt="Identidade visual para empresas">
+                        </div>
+                        <div class="design-link-body">
+                            <span class="design-link-tag">Identidade Visual</span>
+                            <h3>Materiais institucionais</h3>
+                            <p>
+                                Peças visuais criadas para transmitir mais profissionalismo em apresentações, anúncios,
+                                catálogos e materiais que representam a empresa no digital.
+                            </p>
+                            <span class="design-link-cta">Visual profissional</span>
+                        </div>
+                    </article>
+
+                    <article class="design-link-card">
+                        <div class="design-link-image">
+                            <img src="../img/Design-Grafico.png" alt="Criativos promocionais para campanhas">
+                        </div>
+                        <div class="design-link-body">
+                            <span class="design-link-tag">Campanhas</span>
+                            <h3>Criativos promocionais</h3>
+                            <p>
+                                Layouts criados para comunicar a oferta principal com mais impacto, organizar melhor as
+                                informações e aumentar o valor percebido da campanha.
+                            </p>
+                            <span class="design-link-cta">Mais impacto visual</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section design-cta-section" id="contato">
+            <div class="container">
+                <div class="design-cta-shell">
+                    <div>
+                        <span class="design-page-eyebrow">Contato</span>
+                        <h2>Se esse estilo fizer sentido para sua marca, adaptamos as artes para o seu projeto.</h2>
+                    </div>
+                    <a href="https://wa.me/5562982403261" class="btn btn-green">Chamar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js" defer></script>
 </body>
+
 </html>

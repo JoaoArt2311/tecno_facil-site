@@ -1,0 +1,69 @@
+:root {
+  --bg-main: #2c0d59;
+  --white: #ffffff;
+  --text: #2c1d47;
+  --text-soft: #6c5f84;
+  --border: #ece5f4;
+
+  --purple-900: #2c0d59;
+  --purple-800: #43106f;
+  --purple-700: #61189c;
+  --purple-600: #7a22c4;
+  --purple-500: #972fee;
+  --purple-400: #b555ff;
+
+  --green-500: #1ed38c;
+  --green-600: #10b874;
+
+  --shadow-soft: 0 10px 30px rgba(48, 19, 83, 0.08);
+  --shadow-strong: 0 18px 45px rgba(41, 12, 75, 0.16);
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+
+  --container: 1180px;
+  --header-height: 78px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-main);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: min(calc(100% - 32px), var(--container));
+  margin: 0 auto;
+}

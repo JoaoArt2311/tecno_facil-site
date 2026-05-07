@@ -1,0 +1,202 @@
+.marketing-page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0 64px;
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.2), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(181, 85, 255, 0.28), transparent 24%),
+    linear-gradient(135deg, rgba(25, 7, 52, 0.96), rgba(69, 16, 114, 0.84)),
+    url("../img-service/fundo-hero.png") center/cover no-repeat;
+}
+
+.marketing-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(22, 5, 45, 0.82), rgba(22, 5, 45, 0.36));
+}
+
+.marketing-page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  color: var(--white);
+}
+
+.marketing-page-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.marketing-page-eyebrow-light {
+  margin-top: 15px;
+  color: var(--white);
+  background: rgba(151, 47, 238, 0.12);
+  border-color: rgba(151, 47, 238, 0.14);
+}
+
+.marketing-page-hero h1 {
+  font-size: 2.2rem;
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.marketing-page-hero p {
+  max-width: 58ch;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+.marketing-links-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+}
+
+.marketing-section-heading {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  text-align: center;
+  color: var(--white);
+}
+
+.marketing-section-heading p {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.75;
+}
+
+.marketing-links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.marketing-link-card {
+  overflow: hidden;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-strong);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.marketing-link-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(33, 9, 61, 0.22);
+}
+
+.marketing-link-image {
+  overflow: hidden;
+  background: linear-gradient(135deg, #f6f0fb, #ffffff);
+}
+
+.marketing-link-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.marketing-link-card:hover .marketing-link-image img {
+  transform: scale(1.05);
+}
+
+.marketing-link-body {
+  padding: 22px;
+}
+
+.marketing-link-tag {
+  display: inline-flex;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(151, 47, 238, 0.12);
+  color: var(--purple-700);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.marketing-link-body h3 {
+  margin-bottom: 10px;
+  color: var(--purple-800);
+  font-size: 1.28rem;
+  line-height: 1.2;
+}
+
+.marketing-link-body p {
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.marketing-link-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--green-600);
+  font-weight: 700;
+}
+
+.marketing-link-cta::after {
+  content: ">";
+  font-size: 1rem;
+}
+
+.marketing-cta-section {
+  padding-top: 12px;
+}
+
+.marketing-cta-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 26px 22px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 20%),
+    linear-gradient(135deg, #481078, #7a22c4);
+  box-shadow: var(--shadow-strong);
+}
+
+.marketing-cta-shell h2 {
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .marketing-page-hero {
+    padding: 120px 0 88px;
+  }
+
+  .marketing-page-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .marketing-links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .marketing-links-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .marketing-cta-shell {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 36px;
+  }
+}

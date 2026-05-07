@@ -538,13 +538,15 @@ button {
 }
 
 .about-eyebrow {
+  /* color: black; */
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
+  margin-top: 15px;
   margin-bottom: 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid white;
   background: rgba(255, 255, 255, 0.08);
   font-size: 0.82rem;
   font-weight: 700;
@@ -655,6 +657,396 @@ button {
   margin-top: 4px;
 }
 
+/* WEBSITE PAGE */
+.website-hero {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 0 22px 22px;
+}
+
+.website-hero-media {
+  position: absolute;
+  inset: 0;
+  /* background:
+    linear-gradient(135deg, rgba(34, 11, 68, 0.45), rgba(124, 40, 196, 0.18)),
+    url("img/Desenvolvimento-de-site.png") center/cover no-repeat; */
+  transform: scale(1.04);
+}
+
+.website-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(29, 4, 55, 0.92) 0%, rgba(72, 16, 121, 0.8) 55%, rgba(72, 16, 121, 0.28) 100%);
+}
+
+.website-hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+}
+
+.website-hero-copy {
+  max-width: 680px;
+  color: #fff;
+  padding: 36px 0 72px;
+}
+
+.website-hero-copy h1 {
+  font-size: 2.15rem;
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+.website-hero-copy p {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.website-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.website-process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.website-process-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 22px 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.website-process-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, var(--purple-700), var(--purple-500));
+  box-shadow: 0 12px 24px rgba(135, 41, 220, 0.2);
+}
+
+.website-process-card h3 {
+  color: var(--purple-800);
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+
+.website-process-card p {
+  color: var(--text-soft);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.website-explain-shell {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(30, 211, 140, 0.14), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(181, 85, 255, 0.16), transparent 22%),
+    linear-gradient(135deg, #2c0d59 0%, #5a1490 56%, #7a22c4 100%);
+  box-shadow: var(--shadow-strong);
+}
+
+.website-explain-copy {
+  color: #fff;
+}
+
+.website-explain-copy h2 {
+  font-size: 1.85rem;
+  line-height: 1.12;
+  margin-bottom: 14px;
+}
+
+.website-explain-copy p {
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.8;
+}
+
+.website-explain-copy p + p {
+  margin-top: 10px;
+}
+
+.website-explain-points {
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.website-explain-points h3 {
+  color: var(--purple-800);
+  font-size: 1.35rem;
+  margin-bottom: 18px;
+}
+
+.website-projects {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+}
+
+.website-project-card .project-image {
+  background: linear-gradient(135deg, #f5f1fb, #ffffff);
+}
+
+.website-project-card .project-image img {
+  object-fit: contain;
+  padding: 22px;
+}
+
+.website-project-tag {
+  display: inline-flex;
+  padding: 7px 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: rgba(151, 47, 238, 0.12);
+  color: var(--purple-700);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.website-contact-section {
+  padding-top: 20px;
+}
+
+.website-contact-shell {
+  display: grid;
+  gap: 22px;
+  padding: 24px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 22%),
+    radial-gradient(circle at bottom left, rgba(30, 211, 140, 0.16), transparent 18%),
+    linear-gradient(135deg, #451072 0%, #7a22c4 100%);
+  box-shadow: var(--shadow-strong);
+}
+
+.website-contact-copy {
+  color: #fff;
+}
+
+.website-contact-copy h2 {
+  font-size: 1.9rem;
+  line-height: 1.14;
+  margin-bottom: 14px;
+}
+
+.website-contact-copy p {
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.8;
+}
+
+.website-contact-copy p + p {
+  margin-top: 10px;
+}
+
+.website-contact-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.website-contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.98);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-soft);
+  transition: 0.25s ease;
+}
+
+.website-contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.website-contact-card i {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1.25rem;
+  background: linear-gradient(180deg, var(--green-500), var(--green-600));
+  box-shadow: 0 12px 24px rgba(30, 211, 140, 0.2);
+}
+
+.website-contact-card h3 {
+  color: var(--purple-800);
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+}
+
+.website-contact-card p {
+  color: var(--text-soft);
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.website-contact-card span {
+  color: var(--purple-700);
+  font-weight: 700;
+}
+
+.design-hero .website-hero-media {
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.18), transparent 20%),
+    radial-gradient(circle at bottom left, rgba(181, 85, 255, 0.18), transparent 24%),
+    linear-gradient(135deg, rgba(34, 11, 68, 0.88), rgba(107, 32, 175, 0.72));
+}
+
+.design-placeholder-image {
+  min-height: 210px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(151, 47, 238, 0.08), rgba(30, 211, 140, 0.08)),
+    linear-gradient(180deg, #f7f3fb, #ffffff);
+}
+
+.design-placeholder-content {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  text-align: center;
+  color: var(--purple-700);
+}
+
+.design-placeholder-content i {
+  font-size: 2rem;
+  color: var(--purple-500);
+}
+
+.design-placeholder-content span {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.marketing-hero .website-hero-media {
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.18), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(181, 85, 255, 0.2), transparent 24%),
+    linear-gradient(135deg, rgba(25, 7, 52, 0.9), rgba(69, 16, 114, 0.76)),
+    url("img/Marketing-Digital.png") center/cover no-repeat;
+}
+
+.marketing-showcase-image {
+  min-height: 210px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.14), transparent 22%),
+    radial-gradient(circle at bottom left, rgba(151, 47, 238, 0.14), transparent 24%),
+    linear-gradient(180deg, #f6f2fb, #ffffff);
+}
+
+.marketing-showcase-content {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  text-align: center;
+  color: var(--purple-700);
+}
+
+.marketing-showcase-content i {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  font-size: 1.7rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--purple-700), var(--purple-500));
+  box-shadow: 0 12px 24px rgba(135, 41, 220, 0.2);
+}
+
+.marketing-showcase-content span {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.marketing-showcase-image-featured img {
+  object-fit: contain;
+  padding: 22px;
+}
+
+.formatting-hero .website-hero-media {
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.16), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(181, 85, 255, 0.2), transparent 22%),
+    linear-gradient(135deg, rgba(26, 7, 54, 0.92), rgba(74, 20, 122, 0.78));
+}
+
+.formatting-showcase-image {
+  min-height: 210px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(30, 211, 140, 0.14), transparent 22%),
+    radial-gradient(circle at bottom left, rgba(151, 47, 238, 0.16), transparent 24%),
+    linear-gradient(180deg, #f6f2fb, #ffffff);
+}
+
+.formatting-showcase-content {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  text-align: center;
+  color: var(--purple-700);
+}
+
+.formatting-showcase-content i {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  font-size: 1.7rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--purple-700), var(--purple-500));
+  box-shadow: 0 12px 24px rgba(135, 41, 220, 0.2);
+}
+
+.formatting-showcase-content span {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 767px) {
   .about-me.section {
     padding: 38px 0;
@@ -720,6 +1112,44 @@ button {
 
   .about-card .btn {
     width: 100%;
+  }
+
+  .website-hero,
+  .website-hero-content {
+    min-height: 500px;
+  }
+
+  .website-hero-copy {
+    padding: 28px 0 56px;
+  }
+
+  .website-hero-copy h1 {
+    font-size: 1.95rem;
+  }
+
+  .website-hero-actions .btn {
+    width: 100%;
+  }
+
+  .website-explain-shell,
+  .website-contact-shell {
+    padding: 20px 16px;
+    border-radius: 22px;
+  }
+
+  .website-explain-copy h2,
+  .website-contact-copy h2 {
+    font-size: 1.55rem;
+  }
+
+  .website-explain-points {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .website-contact-card {
+    padding: 18px 16px;
+    border-radius: 18px;
   }
 }
 
@@ -798,6 +1228,19 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .website-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .website-explain-shell,
+  .website-contact-shell {
+    padding: 32px;
+  }
+
+  .website-contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-grid {
     grid-template-columns: 1.2fr 1fr;
     text-align: left;
@@ -845,6 +1288,15 @@ button {
     font-size: 4.15rem;
   }
 
+  .website-hero,
+  .website-hero-content {
+    min-height: 640px;
+  }
+
+  .website-hero-copy h1 {
+    font-size: 4rem;
+  }
+
   .hero-text p {
     font-size: 1.05rem;
   }
@@ -882,6 +1334,13 @@ button {
 
   .about-copy h2 {
     font-size: 3rem;
+  }
+
+  .website-explain-shell,
+  .website-contact-shell {
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 28px;
+    padding: 40px;
   }
 
   .footer-grid {
