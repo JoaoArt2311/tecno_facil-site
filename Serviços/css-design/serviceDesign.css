@@ -6,7 +6,7 @@
     radial-gradient(circle at top right, rgba(30, 211, 140, 0.16), transparent 18%),
     radial-gradient(circle at bottom left, rgba(181, 85, 255, 0.26), transparent 24%),
     linear-gradient(135deg, rgba(20, 7, 41, 0.96), rgba(52, 14, 96, 0.88)),
-    url("../../img/Design-Grafico.png") center/cover no-repeat;
+    /* url("../../img/Design-Grafico.png") center/cover no-repeat; */
 }
 
 .design-page-hero::after {
@@ -27,7 +27,7 @@
   display: inline-flex;
   align-items: center;
   padding: 8px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.08);
@@ -59,7 +59,7 @@
 }
 
 .section {
-  padding: 64px 0;
+  padding: 15px 0;
 }
 
 .btn {
@@ -96,7 +96,7 @@
 
 .design-section-title {
   color: var(--white);
-  font-size: 1.8rem;
+  font-size: 30px;
   line-height: 1.15;
   font-weight: 800;
   margin-bottom: 18px;
