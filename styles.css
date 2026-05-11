@@ -1186,6 +1186,12 @@ button {
   color: var(--green-600);
 }
 
+.direitos-da-tecnofacil{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
 /* TABLET */
 @media (min-width: 768px) {
   .hero-slide,

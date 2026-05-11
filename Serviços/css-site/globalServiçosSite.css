@@ -100,6 +100,12 @@ button {
   color: var(--green-600);
 }
 
+.direitos-da-tecnofacil{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
 @media (min-width: 768px) {
   .footer-grid {
     grid-template-columns: 1.2fr 1fr;
