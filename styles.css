@@ -867,9 +867,11 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
+  align-self: start;
 }
 
 .website-contact-card {
+  min-width: 0;
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -880,6 +882,10 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: var(--shadow-soft);
   transition: 0.25s ease;
+}
+
+.website-contact-card > div {
+  min-width: 0;
 }
 
 .website-contact-card:hover {
@@ -914,6 +920,7 @@ button {
 .website-contact-card span {
   color: var(--purple-700);
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .design-hero .website-hero-media {
@@ -1045,6 +1052,13 @@ button {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+
+.direitos-da-tecnofacil{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 12px;
 }
 
 @media (max-width: 767px) {
@@ -1244,7 +1258,7 @@ button {
   }
 
   .website-contact-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer-grid {
@@ -1347,6 +1361,10 @@ button {
     grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
     gap: 28px;
     padding: 40px;
+  }
+
+  .website-contact-cards {
+    grid-template-columns: 1fr;
   }
 
   .footer-grid {
