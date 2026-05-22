@@ -1,376 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TecnoFacil</title>
-    <meta name="description"
-        content="Soluções digitais, automação, manutenção e desenvolvimento web para facilitar o seu mundo digital." />
+    <meta
+      name="description"
+      content="Soluções digitais, automação, manutenção e desenvolvimento web para facilitar o seu mundo digital."
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container nav-wrapper">
-            <a href="#inicio" class="logo" aria-label="TecnoFacil início">
-                <img src="img/LOGO-cerebro-roxo.png" alt="Logo TecnoFacil">
-            </a>
+      <div class="container nav-wrapper">
+        <a href="#inicio" class="logo" aria-label="TecnoFacil início">
+          <img src="img/LOGO-cerebro-roxo.png" alt="Logo TecnoFacil" />
+        </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
-                aria-controls="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#inicio" class="nav-link active">Início</a>
-                <a href="#servicos" class="nav-link">Serviços</a>
-                <a href="#portfolio" class="nav-link">Portfólio</a>
-                <a href="#sobre" class="nav-link">Sobre Nós</a>
-                <!-- <a href="#contato" class="nav-link">Contato</a> -->
-            </nav>
-        </div>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#inicio" class="nav-link active">Início</a>
+          <a href="#servicos" class="nav-link">Serviços</a>
+          <a href="#portfolio" class="nav-link">Portfólio</a>
+          <a href="#sobre" class="nav-link">Sobre Nós</a>
+          <!-- <a href="#contato" class="nav-link">Contato</a> -->
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="hero" id="inicio">
-            <div class="hero-slider" id="heroSlider">
-                <button id="prevSlide" aria-label="Slide anterior">
-                    <!-- <i class="fa-solid fa-chevron-left"></i> -->
-                </button>
+      <section class="hero" id="inicio">
+        <div class="hero-slider" id="heroSlider">
+          <button id="prevSlide" aria-label="Slide anterior">
+            <!-- <i class="fa-solid fa-chevron-left"></i> -->
+          </button>
 
-                <div class="slides">
-                    <article class="hero-slide active">
-                        <div class="hero-bg" style="background-image: url('img/imagem3.png');"></div>
-                        <div class="hero-overlay"></div>
-                        <div class="container hero-content">
-                            <div class="hero-text">
-                                <h1>TECNOFACIL FACILITANDO<br>SEU MUNDO DIGITAL</h1>
-                                <p>
-                                    Somos especialistas em desenvolvimento, automação e soluções tecnológicas
-                                    que facilitam sua vida digital.
-                                </p>
-                                <a href="https://wa.me/5562982403261?text=Olá%20queria%20saber%20mais%20sobre%20os%20serviços%20da%20TecnoFacil"
-                                    class="btn btn-green" target="_blank">Entre em Contato</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="hero-slide">
-                        <div class="hero-bg" style="background-image: url('img/imagem1.png');"></div>
-                        <div class="hero-overlay"></div>
-                        <div class="container hero-content">
-                            <div class="hero-text">
-                                <h2 class="hero-title-alt">AUTOMAÇÃO PERFORMANCE<br>E RESULTADOS</h2>
-                                <p>
-                                    Criamos soluções sob medida para empresas que querem mais agilidade,
-                                    produtividade e presença digital profissional.
-                                </p>
-                                <a href="#servicos" class="btn btn-green">Ver Serviços</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="hero-slide">
-                        <div class="hero-bg" style="background-image: url('img/imagem2.png');"></div>
-                        <div class="hero-overlay"></div>
-                        <div class="container hero-content">
-                            <div class="hero-text">
-                                <h2 class="hero-title-alt">TECNOLOGIA COM VISUAL<br>MODERNO E ESTRATÉGICO</h2>
-                                <p>
-                                    Websites, manutenção, automações e soluções de TI com foco em estética,
-                                    funcionalidade e crescimento.
-                                </p>
-                                <a href="#portfolio" class="btn btn-green">Conheça os Projetos</a>
-                            </div>
-                        </div>
-                    </article>
+          <div class="slides">
+            <article class="hero-slide active">
+              <div
+                class="hero-bg"
+                style="background-image: url(&quot;img/imagem3.png&quot;)"
+              ></div>
+              <div class="hero-overlay"></div>
+              <div class="container hero-content">
+                <div class="hero-text">
+                  <h1>TECNOFACIL FACILITANDO<br />SEU MUNDO DIGITAL</h1>
+                  <p>
+                    Somos especialistas em desenvolvimento, automação e soluções
+                    tecnológicas que facilitam sua vida digital.
+                  </p>
+                  <a
+                    href="https://wa.me/5562982403261?text=Olá%20queria%20saber%20mais%20sobre%20os%20serviços%20da%20TecnoFacil"
+                    class="btn btn-green"
+                    target="_blank"
+                    >Entre em Contato</a
+                  >
                 </div>
+              </div>
+            </article>
 
-                <button id="nextSlide" aria-label="Próximo slide">
-                    <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                </button>
-
-                <div class="slider-dots" id="sliderDots">
-                    <button class="dot active" aria-label="Ir para slide 1"></button>
-                    <button class="dot" aria-label="Ir para slide 2"></button>
-                    <button class="dot" aria-label="Ir para slide 3"></button>
+            <article class="hero-slide">
+              <div
+                class="hero-bg"
+                style="background-image: url(&quot;img/imagem1.png&quot;)"
+              ></div>
+              <div class="hero-overlay"></div>
+              <div class="container hero-content">
+                <div class="hero-text">
+                  <h2 class="hero-title-alt">
+                    AUTOMAÇÃO PERFORMANCE<br />E RESULTADOS
+                  </h2>
+                  <p>
+                    Criamos soluções sob medida para empresas que querem mais
+                    agilidade, produtividade e presença digital profissional.
+                  </p>
+                  <a href="#servicos" class="btn btn-green">Ver Serviços</a>
                 </div>
+              </div>
+            </article>
+
+            <article class="hero-slide">
+              <div
+                class="hero-bg"
+                style="background-image: url(&quot;img/imagem2.png&quot;)"
+              ></div>
+              <div class="hero-overlay"></div>
+              <div class="container hero-content">
+                <div class="hero-text">
+                  <h2 class="hero-title-alt">
+                    TECNOLOGIA COM VISUAL<br />MODERNO E ESTRATÉGICO
+                  </h2>
+                  <p>
+                    Websites, manutenção, automações e soluções de TI com foco
+                    em estética, funcionalidade e crescimento.
+                  </p>
+                  <a href="#portfolio" class="btn btn-green"
+                    >Conheça os Projetos</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button id="nextSlide" aria-label="Próximo slide">
+            <!-- <i class="fa-solid fa-chevron-right"></i> -->
+          </button>
+
+          <div class="slider-dots" id="sliderDots">
+            <button class="dot active" aria-label="Ir para slide 1"></button>
+            <button class="dot" aria-label="Ir para slide 2"></button>
+            <button class="dot" aria-label="Ir para slide 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="servicos">
+        <div class="container">
+          <h2 class="section-title">O QUE FAZEMOS</h2>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <div class="service-content">
+                <h3>Desenvolvimento de Sites</h3>
+                <p>
+                  Sites responsivos, modernos e estratégicos para destacar sua
+                  marca e converter mais.
+                </p>
+                <a href="website.html" class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div class="service-content">
+                <h3>Design Grafico</h3>
+                <p>
+                  Criação de materiais gráficos para destacar sua empresa,
+                  transmitir profissionalismo e gerar mais resultados.
+                </p>
+                <a href="designGrafico.html" class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="service-content">
+                <h3>Marketing Digital</h3>
+                <p>
+                  Venha fazer sua empresa crescer de verdade, alcançando outro
+                  nivel do marketing digital.
+                </p>
+                <a href="marketing.html" class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="service-content">
+                <h3>Formatação de Computadores</h3>
+                <p>
+                  Formatação de computadores para melhorar desempenho, eliminar
+                  erros e deixar sua máquina como nova.
+                </p>
+                <a href="formatação.html" class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h2>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="img/FOTO DA WANESSA.jpeg" alt="Lucas Fernandes" />
+                <div>
+                  <h3>Wanessa Candido - Lumen Consultoria</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Como empresa nova, eu tinha muitos desafios, inseguranças e
+                expectativas… e ter alguém comprometido ao meu lado fez toda
+                diferença nesse processo.
+              </p>
+              <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="img/Logo-Aqui-Tem.png" alt="Ana Silva" />
+                <div>
+                  <h3>Edilson Machado - Supermercado Aqui Tem</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                O João é um profissional muito dedicado, atencioso e competente.
+                Ele desenvolveu algumas artes para o nosso supermercado e o
+                resultado foi excelente.
+              </p>
+              <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="img-service/foto-dermaxx.png" alt="Carlos Oliveira" />
+                <div>
+                  <h3>Gustavo Candido - Dermaxx</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                O João desenvolveu uma sequência de materiais para a Dermaxx e o
+                resultado foi muito bom. A comunicação sempre foi fácil, o
+                processo foi tranquilo e as entregas vieram organizadas. Gostei
+                bastante da parceria e do cuidado com o projeto.
+              </p>
+              <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="portfolio">
+        <div class="container">
+          <h2 class="section-title">CONHEÇA NOSSOS PROJETOS</h2>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="img/Marketing-Digital.png" alt="Projeto GreenFin" />
+              </div>
+              <div class="project-content">
+                <h3>Marketing Digital</h3>
+                <p>
+                  Algumas das contas que a TecnoFacil tomou conta do Marketing,
+                  e que tiveram mais que números, tiveram sua propria identdida
+                  digital.
+                </p>
+                <a
+                  href="Serviços/serviçoMarketing.html"
+                  class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/Desenvolvimento-de-site.png"
+                  alt="Projeto E-Shop Plus"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Sites</h3>
+                <p>
+                  Alguns sites que desenvolvemos para alguns dos nossos cliente.
+                </p>
+                <a
+                  href="Serviços/serviçosSite.html"
+                  class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="img/Design-Grafico.png" alt="Projeto TechBlog" />
+              </div>
+              <div class="project-content">
+                <h3>Design Grafico</h3>
+                <p>
+                  Algumas artes desenvolvidas para nossos clientes alcançarem a
+                  melhor performace do mercado.
+                </p>
+                <a
+                  href="Serviços/serviçoDesignGrafico.html"
+                  class="btn btn-purple btn-small"
+                  >Saiba Mais</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me section" id="sobre">
+        <div class="container">
+          <div class="about-shell">
+            <div class="about-copy">
+              <span class="about-eyebrow">SOBRE A TECNOFACIL</span>
+              <h2>TecnoFacil.</h2>
+              <p>
+                A TecnoFacil nasceu para aproximar empresas do digital com
+                estratégia, organização e presença profissional. Nosso foco é
+                criar experiências que funcionam no dia a dia e também valorizam
+                a imagem da sua marca.
+              </p>
+              <p>
+                Unimos desenvolvimento web, design, marketing e suporte técnico
+                para entregar soluções completas, pensadas para gerar agilidade,
+                confiança e crescimento.
+              </p>
+
+              <div class="about-highlights">
+                <article class="about-highlight">
+                  <i class="fa-solid fa-bolt"></i>
+                  <div>
+                    <h3>Execução ágil</h3>
+                    <p>
+                      Projetos organizados com clareza, acompanhamento próximo e
+                      foco em resultado.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="about-highlight">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h3>Solução completa</h3>
+                    <p>
+                      Do visual à performance, criamos estruturas digitais que
+                      fazem sentido.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-        </section>
 
-        <section class="section services" id="servicos">
-            <div class="container">
-                <h2 class="section-title">O QUE FAZEMOS</h2>
+            <aside class="about-card" aria-label="Diferenciais da TecnoFacil">
+              <div class="about-card-badge">
+                Atendimento humano + visão estratégica
+              </div>
+              <h3>O que você encontra com a gente</h3>
 
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-desktop"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Desenvolvimento de Sites</h3>
-                            <p>
-                                Sites responsivos, modernos e estratégicos para destacar sua marca e converter mais.
-                            </p>
-                            <a href="website.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
+              <ul class="about-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Sites modernos, responsivos e pensados para conversão.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Design gráfico e identidade visual com presença profissional.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Marketing digital com criatividade, constância e
+                  direcionamento.
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Suporte técnico para facilitar a rotina e evitar dores de
+                  cabeça.
+                </li>
+              </ul>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-gears"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Design Grafico</h3>
-                            <p>
-                                Criação de materiais gráficos para destacar sua empresa, transmitir profissionalismo e
-                                gerar mais resultados.
-                            </p>
-                            <a href="designGrafico.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Marketing Digital</h3>
-                            <p>
-                                Venha fazer sua empresa crescer de verdade, alcançando outro nivel do marketing digital.
-                            </p>
-                            <a href="marketing.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Formatação de Computadores</h3>
-                            <p>
-                                Formatação de computadores para melhorar desempenho, eliminar erros e deixar sua máquina
-                                como nova.
-                            </p>
-                            <a href="formatação.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section testimonials">
-            <div class="container">
-                <h2 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h2>
-
-                <div class="testimonials-grid">
-                    <article class="testimonial-card">
-                        <div class="testimonial-top">
-                            <img src="img/FOTO DA WANESSA.jpeg" alt="Lucas Fernandes">
-                            <div>
-                                <h3>Wanessa Candido - Lumen Consultoria</h3>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <p>
-                            Como empresa nova, eu tinha muitos desafios, inseguranças e expectativas… e ter alguém comprometido ao meu lado fez toda diferença nesse processo.
-
-                        </p>
-                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
-                    </article>
-
-                    <article class="testimonial-card">
-                        <div class="testimonial-top">
-                            <img src="img/Logo-Aqui-Tem.png" alt="Ana Silva">
-                            <div>
-                                <h3>Edilson Machado - Supermercado Aqui Tem</h3>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <p>
-                            <!-- Serviço muito bem feito, suporte rápido e ótima experiência. A TecnoFacil conseguiu
-                            organizar tudo com muita qualidade. -->
-                        </p>
-                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
-                    </article>
-
-                    <article class="testimonial-card">
-                        <div class="testimonial-top">
-                            <img src="img-service/foto-dermaxx.png" alt="Carlos Oliveira">
-                            <div>
-                                <h3>Gustavo Candido - Dermaxx</h3>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <p>
-                            <!-- Profissionalismo, bom gosto e execução técnica. Ficou nítido o cuidado com os detalhes
-                            e com a apresentação final. -->
-                        </p>
-                        <a href="#contato" class="btn btn-purple btn-small">Saiba Mais</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section projects" id="portfolio">
-            <div class="container">
-                <h2 class="section-title">CONHEÇA NOSSOS PROJETOS</h2>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="img/Marketing-Digital.png" alt="Projeto GreenFin">
-                        </div>
-                        <div class="project-content">
-                            <h3>Marketing Digital</h3>
-                            <p>
-                                Algumas das contas que a TecnoFacil tomou conta do Marketing, e que tiveram mais que
-                                números, tiveram sua propria identdida digital.
-                            </p>
-                            <a href="Serviços/serviçoMarketing.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="img/Desenvolvimento-de-site.png" alt="Projeto E-Shop Plus">
-                        </div>
-                        <div class="project-content">
-                            <h3>Sites</h3>
-                            <p>
-                                Alguns sites que desenvolvemos para alguns dos nossos cliente.
-                            </p>
-                            <a href="Serviços/serviçosSite.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="img/Design-Grafico.png" alt="Projeto TechBlog">
-                        </div>
-                        <div class="project-content">
-                            <h3>Design Grafico</h3>
-                            <p>
-                                Algumas artes desenvolvidas para nossos clientes alcançarem a melhor performace do
-                                mercado.
-                            </p>
-                            <a href="Serviços/serviçoDesignGrafico.html" class="btn btn-purple btn-small">Saiba Mais</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-me section" id="sobre">
-            <div class="container">
-                <div class="about-shell">
-                    <div class="about-copy">
-                        <span class="about-eyebrow">SOBRE A TECNOFACIL</span>
-                        <h2>TecnoFacil.</h2>
-                        <p>
-                            A TecnoFacil nasceu para aproximar empresas do digital com estratégia, organização e
-                            presença profissional. Nosso foco é criar experiências que funcionam no dia a dia e também
-                            valorizam a imagem da sua marca.
-                        </p>
-                        <p>
-                            Unimos desenvolvimento web, design, marketing e suporte técnico para entregar soluções
-                            completas, pensadas para gerar agilidade, confiança e crescimento.
-                        </p>
-
-                        <div class="about-highlights">
-                            <article class="about-highlight">
-                                <i class="fa-solid fa-bolt"></i>
-                                <div>
-                                    <h3>Execução ágil</h3>
-                                    <p>Projetos organizados com clareza, acompanhamento próximo e foco em resultado.</p>
-                                </div>
-                            </article>
-
-                            <article class="about-highlight">
-                                <i class="fa-solid fa-layer-group"></i>
-                                <div>
-                                    <h3>Solução completa</h3>
-                                    <p>Do visual à performance, criamos estruturas digitais que fazem sentido.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <aside class="about-card" aria-label="Diferenciais da TecnoFacil">
-                        <div class="about-card-badge">Atendimento humano + visão estratégica</div>
-                        <h3>O que você encontra com a gente</h3>
-
-                        <ul class="about-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                Sites modernos, responsivos e pensados para conversão.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                Design gráfico e identidade visual com presença profissional.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                Marketing digital com criatividade, constância e direcionamento.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                Suporte técnico para facilitar a rotina e evitar dores de cabeça.
-                            </li>
-                        </ul>
-
-                        <a href="https://wa.me/5562982403261?text=Olá%20eu%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20serviços%20da%20TecnoFacil"
-                            class="btn btn-green" target="_blank">Falar com a TecnoFacil</a>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
+              <a
+                href="https://wa.me/5562982403261?text=Olá%20eu%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20serviços%20da%20TecnoFacil"
+                class="btn btn-green"
+                target="_blank"
+                >Falar com a TecnoFacil</a
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="https://www.instagram.com/tecnofacildev/?hl=pt-br"><img src="img/TECNOFACIL.png"
-                        alt="Logo TecnoFacil"></a>
-            </div>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="https://www.instagram.com/tecnofacildev/?hl=pt-br"
+            ><img src="img/TECNOFACIL.png" alt="Logo TecnoFacil"
+          /></a>
+        </div>
 
-            <a href="https://www.instagram.com/tecnofacildev/?hl=pt-br" class="footer-item" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-                @tecnofacildev
-            </a>
+        <a
+          href="https://www.instagram.com/tecnofacildev/?hl=pt-br"
+          class="footer-item"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          @tecnofacildev
+        </a>
 
-            <a href="mailto:contato@tecnofacil.com" class="footer-item">
-                <i class="fa-solid fa-square-envelope"></i>
-                tecnofacildev@gmail.com
-            </a>
+        <a href="mailto:contato@tecnofacil.com" class="footer-item">
+          <i class="fa-solid fa-square-envelope"></i>
+          tecnofacildev@gmail.com
+        </a>
 
-            <a href="https://wa.me/5562982403261" class="footer-item">
-                <i class="fa-solid fa-phone"></i>
-                WhatsApp
-            </a>
+        <a href="https://wa.me/5562982403261" class="footer-item">
+          <i class="fa-solid fa-phone"></i>
+          WhatsApp
+        </a>
 
-            <!-- <div class="footer-item">
+        <!-- <div class="footer-item">
                 <i class="fa-solid fa-location-dot"></i>
                 Caldas Novas, Goias
             </div> -->
-        </div>
-        <section class="direitos-da-tecnofacil">
-            <p>© 2026 TecnoFacil. Todos os direitos reservados.</p>
-        </section>
+      </div>
+      <section class="direitos-da-tecnofacil">
+        <p>© 2026 TecnoFacil. Todos os direitos reservados.</p>
+      </section>
     </footer>
     <script src="script.js" defer></script>
-</body>
-
+  </body>
 </html>
