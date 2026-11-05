@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvimento de Sites | TecnoFacil</title>
+    <meta
+      name="description"
+      content="Criação de sites, landing pages e cardápios digitais responsivos pela TecnoFacil. Veja os clientes atendidos e peça seu orçamento."
+    />
+    <meta name="author" content="TecnoFacil" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07040f" />
+    <link
+      rel="canonical"
+      href="https://www.tecnofacildev.com.br/servico-sites.html"
+    />
+    <meta property="og:title" content="Desenvolvimento de Sites | TecnoFacil" />
+    <meta
+      property="og:description"
+      content="Criação de sites, landing pages e cardápios digitais responsivos pela TecnoFacil. Veja os clientes atendidos e peça seu orçamento."
+    />
+    <meta
+      property="og:image"
+      content="https://www.tecnofacildev.com.br/banner-tecno.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="icon" type="image/png" href="img/cerebro-icon.png" />
+    <link rel="apple-touch-icon" href="img/cerebro-icon.png" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0WQK9W2BGR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0WQK9W2BGR");
+    </script>
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo" aria-label="TecnoFacil - início">
+          <img src="img/cerebro-icon.png" alt="" />
+          <span>TECNO<b>FACIL</b></span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+          <a href="index.html#inicio" class="nav-link">Início</a>
+          <a href="index.html#servicos" class="nav-link active">Serviços</a>
+          <a href="index.html#processo" class="nav-link">Como funciona</a>
+          <a href="index.html#portfolio" class="nav-link">Portfólio</a>
+          <a href="index.html#depoimentos" class="nav-link">Clientes</a>
+          <a href="index.html#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link nav-cta-mobile">Orçamento</a>
+        </nav>
+
+        <a
+          href="https://wa.me/5562982403261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento"
+          class="btn btn-glow btn-sm header-cta"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Orçamento grátis
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-hero" id="inicio">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <nav class="breadcrumb reveal" aria-label="Você está em">
+              <a href="index.html">Início</a><span>/</span
+              ><a href="index.html#servicos">Serviços</a><span>/</span
+              ><span>Desenvolvimento de Sites</span>
+            </nav>
+            <h1 class="reveal" style="--d: 0.1s">
+              Sites rápidos e estratégicos que
+              <span class="gradient-text"
+                >convertem visitantes em clientes</span
+              >
+            </h1>
+            <p class="hero-sub reveal" style="--d: 0.2s">
+              Landing pages, sites institucionais e cardápios digitais
+              responsivos, feitos sob medida para destacar a sua marca e
+              facilitar o contato com o cliente.
+            </p>
+            <div class="hero-actions reveal" style="--d: 0.3s">
+              <a
+                href="https://wa.me/5562982403261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20desenvolvimento%20de%20site"
+                class="btn btn-glow btn-lg magnetic"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pedir orçamento
+              </a>
+              <a href="#clientes" class="btn btn-ghost btn-lg magnetic"
+                >Ver clientes atendidos <i class="fa-solid fa-arrow-down"></i
+              ></a>
+            </div>
+            <ul class="hero-trust reveal" style="--d: 0.4s">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Orçamento sem
+                compromisso
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Atendimento humano
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Sites 100% responsivos
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" style="--d: 0.25s">
+            <div class="service-showcase tilt">
+              <div class="showcase-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h2>Desenvolvimento de Sites</h2>
+              <div class="showcase-stats">
+                <div><strong>3</strong><small>clientes atendidos</small></div>
+                <div><strong>100%</strong><small>responsivo</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="servicos">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">// O QUE ESTÁ INCLUSO</span>
+            <h2>
+              Tudo para o seu negócio
+              <span class="gradient-text">ter um site de verdade</span>
+            </h2>
+            <p>
+              Da estrutura ao visual, cuidamos de cada detalhe para o seu site
+              carregar rápido e gerar contatos.
+            </p>
+          </header>
+          <div class="features-grid">
+            <article class="feature glow-card reveal">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3>Landing pages</h3>
+              <p>
+                Páginas focadas em conversão, com chamadas claras e botão direto
+                para o WhatsApp.
+              </p>
+            </article>
+            <article class="feature glow-card reveal" style="--d: 0.1s">
+              <i class="fa-solid fa-building"></i>
+              <h3>Sites institucionais</h3>
+              <p>
+                Apresente sua empresa, serviços e diferenciais com uma estrutura
+                profissional.
+              </p>
+            </article>
+            <article class="feature glow-card reveal" style="--d: 0.2s">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Cardápios e catálogos</h3>
+              <p>
+                Cardápios digitais fáceis de acessar pelo celular, sempre
+                atualizados.
+              </p>
+            </article>
+            <article class="feature glow-card reveal">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h3>100% responsivo</h3>
+              <p>
+                Layout que funciona muito bem em celulares, tablets e
+                computadores.
+              </p>
+            </article>
+            <article class="feature glow-card reveal" style="--d: 0.1s">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h3>Otimizado para Google</h3>
+              <p>
+                Boas práticas de SEO para sua empresa ser encontrada por quem
+                procura.
+              </p>
+            </article>
+            <article class="feature glow-card reveal" style="--d: 0.2s">
+              <i class="fa-solid fa-gauge-high"></i>
+              <h3>Rápido e seguro</h3>
+              <p>
+                Carregamento leve e estrutura segura para uma ótima experiência.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="clientes">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">// CLIENTES ATENDIDOS</span>
+            <h2>Sites que <span class="gradient-text">já estão no ar</span></h2>
+            <p>
+              Conheça os clientes que confiaram na TecnoFacil para colocar o
+              negócio na internet.
+            </p>
+          </header>
+          <div class="clients-grid">
+            <article class="client-card glow-card reveal">
+              <div class="client-media">
+                <img
+                  src="img-service/foto-cardapio.png"
+                  alt="Cardápio digital TecnoFacil Burger"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-body">
+                <h3>Cardápio Digital</h3>
+                <div class="client-role">TecnoFacil Burger</div>
+                <p>
+                  Cardápio digital para a TecnoFacil Burger, pensado para
+                  apresentar os produtos de forma clara e fácil de acessar pelo
+                  celular.
+                </p>
+                <ul>
+                  <li>Cardápio digital responsivo</li>
+                  <li>Visual alinhado à marca</li>
+                  <li>Acesso rápido pelo celular</li>
+                </ul>
+                <a
+                  href="https://cardapiodigital-tecnofacil.netlify.app/"
+                  class="btn btn-ghost btn-sm client-link"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visitar site</a
+                >
+              </div>
+            </article>
+            <article class="client-card glow-card reveal" style="--d: 0.1s">
+              <div class="client-media">
+                <img
+                  src="img-service/foto-use-luume.png"
+                  alt="Site Use Luume"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-body">
+                <h3>Use Luume</h3>
+                <div class="client-role">Site - Loja de Pratas</div>
+                <p>
+                  Site desenvolvido para a Use Luume, com visual moderno e
+                  estrutura pensada para apresentar a marca com
+                  profissionalismo.
+                </p>
+                <ul>
+                  <li>Site responsivo</li>
+                  <li>Layout moderno e profissional</li>
+                  <li>Estrutura otimizada para o Google</li>
+                </ul>
+                <a
+                  href="https://use-luume.netlify.app/"
+                  class="btn btn-ghost btn-sm client-link"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visitar site</a
+                >
+              </div>
+            </article>
+            <article class="client-card glow-card reveal" style="--d: 0.1s">
+              <div class="client-media">
+                <img
+                  src="img-service/foto-eagles-sports.png"
+                  alt="Site Eagles Sports"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-body">
+                <h3>Eagles Sports</h3>
+                <div class="client-role">Site - Loja de Esportes</div>
+                <p>
+                  Link na bio da Eagles Sports, com visual moderno e estrutura pensada para apresentar a marca com profissionalismo.
+                </p>
+                <ul>
+                  <li>Link na Bio</li>
+                  <li>Layout moderno e profissional</li>
+                  <li>Estrutura otimizada para o Google</li>
+                </ul>
+                <a
+                  href="https://eaglesesportesjudolinks.netlify.app"
+                  class="btn btn-ghost btn-sm client-link"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visitar site</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="processo">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">// COMO FUNCIONA</span>
+            <h2>
+              Do primeiro contato à <span class="gradient-text">entrega</span>,
+              sem complicação
+            </h2>
+            <p>
+              Um processo simples, transparente e com acompanhamento próximo em
+              todas as etapas.
+            </p>
+          </header>
+          <div class="steps">
+            <div class="steps-line" aria-hidden="true">
+              <span id="stepsFill"></span>
+            </div>
+            <div class="step reveal">
+              <div class="step-num">01</div>
+              <h3>Conversa</h3>
+              <p>Você conta sua ideia e entendemos o objetivo do seu site.</p>
+            </div>
+            <div class="step reveal" style="--d: 0.12s">
+              <div class="step-num">02</div>
+              <h3>Proposta</h3>
+              <p>
+                Apresentamos estrutura, prazo e investimento, sem surpresas.
+              </p>
+            </div>
+            <div class="step reveal" style="--d: 0.24s">
+              <div class="step-num">03</div>
+              <h3>Criação</h3>
+              <p>
+                Desenvolvemos o site com você acompanhando e aprovando cada
+                etapa.
+              </p>
+            </div>
+            <div class="step reveal" style="--d: 0.36s">
+              <div class="step-num">04</div>
+              <h3>Entrega e suporte</h3>
+              <p>
+                Site no ar e a TecnoFacil ao seu lado para ajustes e dúvidas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq-wrap">
+          <header class="section-head reveal">
+            <span class="eyebrow">// DÚVIDAS FREQUENTES</span>
+            <h2>Ficou com <span class="gradient-text">alguma dúvida?</span></h2>
+          </header>
+          <div class="faq reveal" id="faqRoot">
+            <div class="faq-panel" role="tabpanel" id="faq-panel-sites">
+              <div class="faq-item">
+                <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-sites-0" id="faq-q-sites-0">
+                  <span>Quanto custa um site?</span><i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a" id="faq-a-sites-0" role="region" aria-labelledby="faq-q-sites-0">
+                  <div><p>O valor depende do tamanho e das funcionalidades. Conte sua
+                ideia pelo WhatsApp e enviamos uma proposta clara e sem
+                compromisso.</p></div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-sites-1" id="faq-q-sites-1">
+                  <span>Em quanto tempo meu site fica pronto?</span><i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a" id="faq-a-sites-1" role="region" aria-labelledby="faq-q-sites-1">
+                  <div><p>O prazo varia conforme o projeto. Combinamos tudo na proposta e
+                você acompanha cada etapa até a entrega.</p></div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-sites-2" id="faq-q-sites-2">
+                  <span>O site funciona bem no celular?</span><i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a" id="faq-a-sites-2" role="region" aria-labelledby="faq-q-sites-2">
+                  <div><p>Sim. Todos os nossos sites são responsivos e pensados para
+                celulares, tablets e computadores.</p></div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-sites-3" id="faq-q-sites-3">
+                  <span>Posso pedir alterações depois que o site estiver no ar?</span><i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a" id="faq-a-sites-3" role="region" aria-labelledby="faq-q-sites-3">
+                  <div><p>Pode. Nosso atendimento continua depois da entrega, para
+                ajustes, atualizações e dúvidas.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" id="contato">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="container cta-inner">
+          <div class="cta-copy reveal">
+            <span class="eyebrow">// VAMOS CONVERSAR</span>
+            <h2>
+              Pronto para ter um site que
+              <span class="gradient-text">trabalha por você?</span>
+            </h2>
+            <p>
+              Conte o que você precisa e receba um orçamento sem compromisso.
+              Respondemos direto no WhatsApp.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-brands fa-whatsapp"></i
+                ><a
+                  href="https://wa.me/5562982403261"
+                  target="_blank"
+                  rel="noopener"
+                  >+55 62 98240-3261</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i
+                ><a href="mailto:tecnofacildev@gmail.com"
+                  >tecnofacildev@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i
+                ><a
+                  href="https://www.instagram.com/tecnofacildev/"
+                  target="_blank"
+                  rel="noopener"
+                  >@tecnofacildev</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i
+                ><span>Caldas Novas, Goiás</span>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="quote-form glow-card reveal"
+            id="quoteForm"
+            style="--d: 0.15s"
+          >
+            <h3>Peça seu orçamento</h3>
+            <label>
+              Seu nome
+              <input
+                type="text"
+                id="qName"
+                placeholder="Como podemos te chamar?"
+                required
+              />
+            </label>
+            <label>
+              O que você precisa?
+              <select id="qService" required>
+                <option value="">Selecione um serviço</option>
+                <option selected>Desenvolvimento de Site</option>
+                <option>Design Gráfico</option>
+                <option>Marketing Digital</option>
+                <option>Formatação / Suporte Técnico</option>
+                <option>Outro assunto</option>
+              </select>
+            </label>
+            <label>
+              Conte um pouco sobre seu projeto
+              <textarea
+                id="qMsg"
+                rows="3"
+                placeholder="Opcional, mas ajuda bastante!"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-glow btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+            </button>
+            <small
+              >Ao enviar, você será direcionado para o nosso WhatsApp.</small
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="TecnoFacil - início">
+            <img src="img/cerebro-icon.png" alt="" />
+            <span>TECNO<b>FACIL</b></span>
+          </a>
+          <p>Facilitando o seu mundo digital.</p>
+        </div>
+        <nav class="footer-links" aria-label="Rodapé">
+          <a href="index.html#servicos">Serviços</a>
+          <a href="index.html#portfolio">Portfólio</a>
+          <a href="index.html#depoimentos">Clientes</a>
+          <a href="index.html#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/tecnofacildev/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/5562982403261"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="mailto:tecnofacildev@gmail.com" aria-label="E-mail"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2026 TecnoFacil. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5562982403261?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais"
+      class="whats-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="landing.js" defer></script>
+  </body>
+</html>
